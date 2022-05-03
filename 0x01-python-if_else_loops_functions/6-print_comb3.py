@@ -5,4 +5,3 @@ for a in range(10):
             print(f"{a}{b}", end=', ')
         if a < b and a == 8:
             print(f"{a}{b}")
-
