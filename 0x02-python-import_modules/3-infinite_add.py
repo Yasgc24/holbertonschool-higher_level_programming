@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-from sys import argv
-lena = len(argv)
-resl = 0
+if __name__ == "__main__":
+    from sys import argv
 
-for n in range(1, lena):
-    resl += int(argv[n])
+    lena = len(argv)
+    resl = 0
 
-print(resl)
+    for n in range(1, lena):
+        resl += int(argv[n])
+    print(resl)
