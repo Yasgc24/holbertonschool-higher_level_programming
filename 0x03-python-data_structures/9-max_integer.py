@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+def max_integer(my_list=[]):
+    if len(my_list) == 0:
+        return None
+    maxint = muy_list[0]
+    for i in muy_list:
+        if i > maxint:
+            maxint = i
+        return(maxint)
