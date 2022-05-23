@@ -75,7 +75,7 @@ Last but not least, your program should also handle big numbers.
 Remember how you did (or did not) do it in C? #pythoniscool
  
 #### 4. Who are you?
-Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
+Write a program that prints all the names defined by the compiled module [hidden_4.pyc](https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc) (please download it locally).
 * You should print one name per line, in alpha order
 * You should print only names that do not start with __
 * Your code should not be executed when imported
