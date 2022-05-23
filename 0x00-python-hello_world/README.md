@@ -5,7 +5,7 @@
 ![image](https://user-images.githubusercontent.com/98331961/169895409-7a19ef7f-096d-47de-b5f7-febad56a7301.png)
 
 
-### General
+## General
 ***
 
 * Why Python programming is awesome
