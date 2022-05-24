@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """My first square"""
 
 
 class Square:
-    """empty class Square that defines a square"""
+    """Empty class Square"""
     pass
