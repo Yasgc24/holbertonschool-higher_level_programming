@@ -3,11 +3,10 @@
 
 
 class Square:
-    """class Square that defines a square by:
-    (based on 3-square.py)"""
+    """class Square that defines a square by:(based on 3-square.py)"""
 
-    def __init(self, size=0):
-        if type(size) is not int:
+    def __init__(self, size=0):
+        if not type(size) == int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
@@ -20,12 +19,12 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) is not int:
+        if not type(value) == int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
-            sielf.__size = value
+            self.__size = value
 
     def area(self):
         return self.__size * self.__size
