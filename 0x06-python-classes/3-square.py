@@ -6,6 +6,7 @@ class Square:
     """class Square that defines a square by:
     (based on 2-square.py)"""
     def __init__(self, size=0):
+        """raise a TypeError or ValueError exception with a message"""
         if not type(size) == int:
             raise TypeError("size must be an integer")
         elif size < 0:
