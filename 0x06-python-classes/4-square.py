@@ -7,7 +7,7 @@ class Square:
     (based on 3-square.py)"""
 
     def __init(self, size=0):
-        if not type(size) == int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
@@ -16,13 +16,11 @@ class Square:
 
     @property
     def size(self):
-        """property to retrieve the size"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """property setter to set the value of the size"""
-        if not type(value) == int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
@@ -30,5 +28,4 @@ class Square:
             sielf.__size = value
 
     def area(self):
-        """Public instance method that returns the current square area"""
         return self.__size * self.__size

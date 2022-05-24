@@ -4,8 +4,7 @@
 
 class Square:
     """class Square that defines a square by:
-    (based on 2-square.py) with public instance method
-    that returns the current square area"""
+    (based on 2-square.py)"""
     def __init__(self, size=0):
         if not type(size) == int:
             raise TypeError("size must be an integer")
@@ -15,4 +14,5 @@ class Square:
             self.__size = size
 
     def area(self):
+        """Public instance method that returns the current square area"""
         return self.__size * self.__size
