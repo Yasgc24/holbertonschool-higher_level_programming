@@ -20,8 +20,14 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     if type(a) == float:
+        """
+        a must be casted to integers
+        """
         a = int(a)
     if type(b) == float:
+        """
+        a must be casted to integers
+        """
         b = int(b)
 
     return (a + b)
