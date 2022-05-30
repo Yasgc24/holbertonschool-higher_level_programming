@@ -1,63 +1,80 @@
-Tests "add_interger" module
-===========================
+Tests "0-add_integer.py" module
+===============================
 
-Using "add_interger"
+Using "add_integer"
 ===================
 
-from 0-add_interger import add_interger
-
+from 0-add_integer import add_interger
 >>> add_integer = __import__('0-add_integer').add_integer
 
-Two intergers
->>> add_interger(3, 3)
+Tests:
+
+>>> add_integer(3, 3)
 6
 
-Two intergers negatives
->>> add_interger(-3, -4)
+>>> add_integer(-3, -4)
 -7
 
-One interger positive and one interger negtive
->>> add_interger(2, -5)
+>>> add_integer(2, -5)
 -3
 
-One interger
->>> add_interger(4)
+>>> add_integer(4)
 102
 
-One float number and one interger
->>> add_interger(60.4, 5)
+>>> add_integer(60.4, 5)
 65
 
-Two floats
->>> add_interger(40.3, 50.2)
+>>> add_integer(40.3, 50.2)
 90
 
-First parameter as string
->>> add_interger("holberton", 7)
+>>> add_integer("holberton", 7)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-Second parameter as string
->>> add_interger(3, "school")
+>>> add_integer(3, "school")
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
 
-Two strings
->>> add_interger("holberton", "school")
+>>> add_integer("holberton", "school")
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-First parameter as special character
->>> add_interger(?, 28)
+>>> add_integer(None)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-Second parameter as special character
->>> add_interger(14, :)
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(6, ?)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+>>> add_integer(4, 3, 2)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(None, None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(3, None)
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+>>> add_integer(None, 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+
