@@ -1,0 +1,63 @@
+Tests "add_interger" module
+===========================
+
+Using "add_interger"
+===================
+
+from 0-add_interger import add_interger
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Two intergers
+>>> add_interger(3, 3)
+6
+
+Two intergers negatives
+>>> add_interger(-3, -4)
+-7
+
+One interger positive and one interger negtive
+>>> add_interger(2, -5)
+-3
+
+One interger
+>>> add_interger(4)
+102
+
+One float number and one interger
+>>> add_interger(60.4, 5)
+65
+
+Two floats
+>>> add_interger(40.3, 50.2)
+90
+
+First parameter as string
+>>> add_interger("holberton", 7)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Second parameter as string
+>>> add_interger(3, "school")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+Two strings
+>>> add_interger("holberton", "school")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+First parameter as special character
+>>> add_interger(?, 28)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Second parameter as special character
+>>> add_interger(14, :)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
