@@ -29,4 +29,3 @@ def text_indentation(text):
                 counter = 0
             else:
                 print(char, end="")
-
