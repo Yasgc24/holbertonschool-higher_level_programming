@@ -1,0 +1,150 @@
+Tests "1-my_list.py" module
+===============================
+
+Using "print_sorted()"
+===================
+
+from 1-my_list import add_interger print_sorted
+>>> MyList = __import__('1-my_list').MyList
+
+Tests:
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+
+>>> my_list = MyList()
+>>> my_list.append(float("inf"))
+>>> my_list.append(4)
+>>> my_list.append(8)
+>>> my_list.append(16)
+>>> my_list.append(12)
+>>> print(my_list)
+[inf, 4, 8, 16, 12]
+>>> my_list.print_sorted()
+[4, 8, 12, 16, inf]
+>>> print(my_list)
+[inf, 4, 8, 16, 12]
+
+
+>>> my_list = MyList()
+>>> my_list.append("Hello")
+>>> my_list.append("World")
+>>> my_list.append("Holberton")
+>>> my_list.append("Best")
+>>> my_list.append("School")
+>>> print(my_list)
+['Hello', 'World', 'Holberton', 'Best', 'School']
+>>> my_list.print_sorted()
+['Best', 'Hello', 'Holberton', 'School', 'World']
+>>> print(my_list)
+['Hello', 'World', 'Holberton', 'Best', 'School']
+
+
+>>> my_list = MyList()
+>>> my_list.append(10)
+>>> my_list.append(10)
+>>> print(my_list)
+[10, 10]
+>>> my_list.print_sorted()
+[10, 10]
+>>> print(my_list)
+[10, 10]
+
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> print(my_list)
+[5]
+>>> my_list.print_sorted()
+[5]
+>>> print(my_list)
+[5]
+
+>>> my_list = MyList()
+>>> my_list.append(-4)
+>>> my_list.append(-46)
+>>> my_list.append(-28)
+>>> my_list.append(-1)
+>>> my_list.append(0)
+>>> print(my_list)
+[-4, -46, -28, -1, 0]
+>>> my_list.print_sorted()
+[-46, -28, -4, -1, 0]
+>>> print(my_list)
+[-4, -46, -28, -1, 0]
+
+
+my_list = MyList()
+print(my_list)
+[]
+my_list.print_sorted()
+[]
+print(my_list)
+[]
+
+my_list = MyList()
+my_list.append(4.1)
+my_list.append(8.37)
+my_list.append(5.04)
+my_list.append(-3.65)
+my_list.append(0.45)
+print(my_list)
+[4.1, 8.37, 5.04, -3.65, 0.45]
+my_list.print_sorted()
+[-3.65, 0.45, 4.1, 5.04, 8.37]
+print(my_list)
+[4.1, 8.37, 5.04, -3.65, 0.45]
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(-4)
+>>> my_list.append(2)
+>>> my_list.append(-1)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, -4, 2, -1, 5]
+>>> my_list.print_sorted()
+[-4, -1, 1, 2, 5]
+>>> print(my_list)
+[1, -4, 2, -1, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append("hello")
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 'hello', 2, 3, 5]
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> print(my_list)
+[1, 'hello', 2, 3, 5]
+
+
+>>> my_list = MyList()
+>>> my_list.append(None)
+>>> my_list.append(8.37)
+>>> my_list.append(5.04)
+>>> my_list.append(None)
+>>> my_list.append(0.45)
+>>> print(my_list)
+[None, 8.37, 5.04, None, 0.45]
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'float' and 'NoneType'
+>>> print(my_list)
+[None, 8.37, 5.04, None, 0.45]
