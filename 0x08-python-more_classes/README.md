@@ -49,11 +49,11 @@
 ***
 
 #### 0. Simple rectangle
-* Write an empty class Rectangle that defines a rectangle:
+Write an empty class Rectangle that defines a rectangle:
 * You are not allowed to import any module
 
 #### 1. Real definition of a rectangle
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -68,7 +68,7 @@
   * You are not allowed to import any module
 
 #### 2. Area and Perimeter
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -86,7 +86,7 @@
   * You are not allowed to import any module
 
 #### 3. String representation
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -106,7 +106,7 @@
   * You are not allowed to import any module
 
 #### 4. Eval is magic
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -127,7 +127,7 @@
   * You are not allowed to import any module
 
 #### 5. Detect instance deletion
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -149,7 +149,7 @@
   * You are not allowed to import any module
 
 #### 6. How many instances
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -175,7 +175,7 @@
   * You are not allowed to import any module
 
 #### 7. Change representation
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -205,7 +205,7 @@
   * You are not allowed to import any module
 
 #### 8. Compare rectangles
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
@@ -239,8 +239,7 @@
   * You are not allowed to import any module
 
 #### 9. A square is a rectangle
-
-* Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
   * Private instance attribute: width:
     * property def width(self): to retrieve it
     * property setter def width(self, value): to set it:
