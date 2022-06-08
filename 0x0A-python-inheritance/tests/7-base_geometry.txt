@@ -1,0 +1,51 @@
+Tests "7-base_geometry.py" module
+===============================
+
+Using "integer_validator"
+===================
+
+from 7-base_geometry import integer_validator
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+Tests:
+
+>>> bg.integer_validator("Holberton", "School")
+Traceback (most recent call last):
+...
+TypeError: Holberton must be an integer
+
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> bg.integer_validator("school", -6)
+Traceback (most recent call last):
+...
+ValueError: school must be greater than 0
+
+
+>>> bg.integer_validator("School", 0)
+Traceback (most recent call last):
+...
+ValueError: School must be greater than 0
+
+>>> bg.integer_validator("School", [1, 2])
+Traceback (most recent call last):
+...
+TypeError: School must be an integer
+
+
+
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+
+>>> bg.area(5)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
