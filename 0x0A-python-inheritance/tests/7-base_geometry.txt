@@ -55,6 +55,10 @@ Traceback (most recent call last):
 ...
 TypeError: School must be an integer
 
+>>> bg.integer_validator("School", (1, 2))
+Traceback (most recent call last):
+...
+TypeError: School must be an integer
 
 >>> bg.area()
 Traceback (most recent call last):
