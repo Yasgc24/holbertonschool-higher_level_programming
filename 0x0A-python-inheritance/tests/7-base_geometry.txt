@@ -11,6 +11,20 @@ from 7-base_geometry import integer_validator
 
 Tests:
 
+>>> bg.integer_validator("my_int", 12)
+
+>>> bg.integer_validator("width", 89)
+
+bg.integer_validator("School", 4.56)
+Traceback (most recent call last):
+...
+TypeError: School must be an integer
+
+>>> bg.integer_validator(4, 6, 8)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
 >>> bg.integer_validator("Holberton", "School")
 Traceback (most recent call last):
 ...
@@ -26,6 +40,10 @@ Traceback (most recent call last):
 ...
 ValueError: school must be greater than 0
 
+>>> bg.integer_validator("School", True)
+Traceback (most recent call last):
+...
+TypeError: School must be an integer
 
 >>> bg.integer_validator("School", 0)
 Traceback (most recent call last):
@@ -36,7 +54,6 @@ ValueError: School must be greater than 0
 Traceback (most recent call last):
 ...
 TypeError: School must be an integer
-
 
 
 >>> bg.area()
