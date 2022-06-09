@@ -26,3 +26,10 @@ class Student:
             if hasattr(self, i):
                 my_dic[i] = getattr(self, i)
         return my_dic
+
+    def reload_from_json(self, json):
+        """Public method that replaces all
+        attributes of an instance"""
+        for a, b in json.items():
+            if hasattr(self, a):
+                setattr(self, a, b)
