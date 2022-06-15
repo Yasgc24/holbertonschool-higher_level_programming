@@ -75,7 +75,7 @@ class Base:
             else:
                 lo = [obj.to_dictionary() for obj in list_objs]
                 f.write(Base.to_json_string(lo))
-                
+
     @classmethod
     def load_from_file_csv(cls):
         filename = cls.__name__ + ".csv"
