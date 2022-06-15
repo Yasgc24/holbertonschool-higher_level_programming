@@ -67,10 +67,8 @@ class Base:
             return []
 
     @classmethod
-    def save_to_file_cvs(cls, list_objs):
-        """writes the JSON string representation
-        of list_objs to a file"""
-        filename = cls.__name__ + ".cvs"
+    def save_to_file_csv(cls, list_objs):
+        filename = cls.__name__ + ".csv"
         with open(filename, "w") as f:
             if list_objs is None:
                 f.write("[]")
@@ -79,8 +77,8 @@ class Base:
                 f.write(Base.to_json_string(lo))
                 
     @classmethod
-    def load_from_file_cvs(cls):
-        filename = cls.__name__ + ".cvs"
+    def load_from_file_csv(cls):
+        filename = cls.__name__ + ".csv"
         try:
             with open(filename, "r") as f:
                 list_dict = Base.from_json_string(f.read())
