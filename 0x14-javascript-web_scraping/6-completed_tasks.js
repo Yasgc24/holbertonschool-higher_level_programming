@@ -11,5 +11,6 @@ request(process.argv[2], (error, response, body) => {
         completed[tasks.userId] += 1;
       }
     });
+    console.log(completed);
   }
 });
