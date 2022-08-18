@@ -2,8 +2,7 @@
 const request = require('request');
 
 request.get(process.argv[2], (error, response, body) => {
-  if (error) {
-    console.error('error:', error);
+  if (!error) {
     const completed = {};
     JSON.parse(body).forEach((tasks) => {
       if (tasks.completed && completed[tasks.userId] === undefined) {
