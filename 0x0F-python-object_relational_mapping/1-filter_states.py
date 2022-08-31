@@ -5,7 +5,7 @@ import MySQLdb
 from sys import argv
 
 
-def get_states_n():
+def states_startn():
     """Takes 3 arguments:
         argv[1]: mysql username
         argv[2]: mysql password
@@ -29,4 +29,4 @@ def get_states_n():
 
 
 if __name__ == "__main__":
-    get_states_n()
+    states_startn()

@@ -5,7 +5,7 @@ import MySQLdb
 from sys import argv
 
 
-def args():
+def state():
     """Takes 4 arguments:
         argv[1]: mysql username
         argv[2]: mysql password
@@ -31,4 +31,4 @@ def args():
 
 
 if __name__ == "__main__":
-    args()
+    state()
