@@ -5,28 +5,13 @@ import MySQLdb
 from sys import argv
 
 
-def states_startn():
-    """Takes 3 arguments:
-        argv[1]: mysql username
-        argv[2]: mysql password
-        argv[3]: database name"""
-    db = MySQLdb.connect(host="localhost",
-                         port=3306,
-                         user=argv[1],
-                         passwd=argv[2],
-                         db=argv[3])
-
-    cursor = db.cursor()
-
-    cursor.execute(
-        "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
-    rows = cursor.fetchall()
-    for i in rows:
-        print(i)
-
-    cursor.close()
-    db.close()
-
-
 if __name__ == "__main__":
-    states_startn()
+    conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                           passwd=argv[2], db=argv[3], charset="utf8")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
+    query_rows = cur.fetchall()
+    for row in query_rows:
+        print(row)
+    cur.close()
+    conn.close()
