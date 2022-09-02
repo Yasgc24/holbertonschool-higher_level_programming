@@ -7,6 +7,5 @@ import requests
 
 
 if __name__ == "__main__":
-    url = argv[1]
-    response = requests.get(url)
+    response = requests.get(argv[1])
     print(response.headers.get("X-Request-Id"))
