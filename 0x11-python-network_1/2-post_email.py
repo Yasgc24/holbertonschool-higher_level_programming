@@ -3,7 +3,6 @@
 sends a POST request to the passed
 URL with the email as a parameter, and displays
 the body of the response (decoded in utf-8)"""
-from ssl import ALERT_DESCRIPTION_UNEXPECTED_MESSAGE
 from urllib import request, parse
 from sys import argv
 
