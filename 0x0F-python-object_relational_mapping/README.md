@@ -1,8 +1,6 @@
 # 0x0F. Python - Object-relational mapping
 ***
 
-![image](https://user-images.githubusercontent.com/98331961/199149569-c7cbcfc5-0a82-45da-bd72-9a5dfb49044f.png)
-
 ## General
 ***
 * Why Python programming is awesome
